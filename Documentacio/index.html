@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  </head>
+  <body>
+    <header></header>
+    <section class="container">
+      <header class="container text-center"><h1>HTML</h1></header>
+      <main class="container">
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Estructura basica HTML</h2>
+
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><code>&lt;head&gt;</code></li>
+            <li class="list-group-item"><code>&lt;body&gt;</code></li>
+            <li class="list-group-item"><code>&lt;meta&gt;</code></li>
+            <li class="list-group-item"><code>&lt;title&gt;</code></li>
+            <li class="list-group-item"><code>&lt;link&gt;</code></li>
+            <li class="list-group-item"><code>&lt;script&gt;</code></li>
+          </ul>
+
+          <p class="mb-3">
+            <b>&lt;head&gt;</b>: conte les metadades del document, com el title
+            que surt a la pestanya, links a fulls d’estil i meta per indicar
+            codificacio i viewport.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;body&gt;</b>: hi va tot el contingut visible de la pagina:
+            textos, imatges, enllaços, formularis, etc. Mejor no carregar-lo
+            massa per no alentir el carregament.
+          </p>
+
+          <p class="mb-1">
+            <b>&lt;meta&gt;</b>: dona info que no es veu. Els mes normals son:
+          </p>
+          <ul class="mb-4">
+            <li>
+              <code>charset="UTF-8"</code> – defineix la codificacio de
+              caracters.
+            </li>
+            <li>
+              <code
+                >name="viewport" content="width=device-width,
+                initial-scale=1.0"</code
+              >
+              – ajusta amplada i zoom per movils.
+            </li>
+          </ul>
+
+          <p class="mb-3">
+            <b>&lt;title&gt;</b>: posa el titol del document, que apareix al
+            navegador i tambe als resultats de cerca.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;link&gt;</b>: enllaça amb recursos externs, normalment CSS.
+            Per exemple:<br />
+            <code
+              >&lt;link rel="stylesheet" href="assets/css/bootstrap.css"
+              /&gt;</code
+            >
+          </p>
+
+          <p class="mb-2">
+            <b>&lt;script&gt;</b>: inclou o vincula codi JavaScript. Es sol
+            posar al final del <code>&lt;body&gt;</code> per no bloquejar el
+            render:
+          </p>
+          <p>
+            <code
+              >&lt;script
+              src="assets/js/bootstrap.bundle.js"&gt;&lt;/script&gt;</code
+            >
+          </p>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">
+            Etiquetes estructurals i web semantica
+          </h2>
+
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><code>&lt;header&gt;</code></li>
+            <li class="list-group-item"><code>&lt;nav&gt;</code></li>
+            <li class="list-group-item"><code>&lt;main&gt;</code></li>
+            <li class="list-group-item"><code>&lt;section&gt;</code></li>
+            <li class="list-group-item"><code>&lt;article&gt;</code></li>
+            <li class="list-group-item"><code>&lt;aside&gt;</code></li>
+            <li class="list-group-item"><code>&lt;footer&gt;</code></li>
+          </ul>
+
+          <p class="mb-3">
+            Va servir per organitzar la pagina amb tags mes clars. Jo crec que
+            es mes facil de llegir.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;header&gt;</b>: va a l’inici, amb el titol o logo i menu.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;nav&gt;</b>: links de navegacio, com menu principal.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;main&gt;</b>: el contingut principal, només un per pagina.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;section&gt;</b>: parts separades de tema dins el main.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;article&gt;</b>: coses independents, com noticies o posts.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;aside&gt;</b>: info extra al costat, coses complementaries.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;footer&gt;</b>: al final, amb info de contacte o drets.
+          </p>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Etiquetes de text</h2>
+
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><code>&lt;h1&gt;-&lt;h6&gt;</code></li>
+            <li class="list-group-item"><code>&lt;p&gt;</code></li>
+            <li class="list-group-item"><code>&lt;span&gt;</code></li>
+            <li class="list-group-item"><code>&lt;b&gt;</code></li>
+            <li class="list-group-item"><code>&lt;i&gt;</code></li>
+          </ul>
+
+          <p class="mb-3">
+            <b>&lt;h1&gt;-&lt;h6&gt;</b>: titols de diferents nivells per
+            organitzar jerarquia de contingut.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;p&gt;</b>: paragraf de text, es fa servir per blocs de
+            contingut.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;span&gt;</b>: es un text en linia, util per aplicar estils.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;b&gt;</b>: posa text en negreta, sol per destacar.
+          </p>
+
+          <p class="mb-3"><b>&lt;i&gt;</b>: posa text en italica.</p>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Imatges</h2>
+
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><code>&lt;img&gt;</code></li>
+            <li class="list-group-item"><code>&lt;picture&gt;</code></li>
+          </ul>
+
+          <p class="mb-3">
+            Es fan servir per afegir imatges amb opcions de formats segons
+            pantalla.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;img&gt;</b>: etiqueta basica per posar una imatge amb
+            <code>src</code> i <code>alt</code>.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;picture&gt;</b>: envolta variants amb
+            <code>&lt;source&gt;</code> per triar format o resolucio segons
+            dispositiu.
+          </p>
+
+          <picture>
+            <source srcset="assets/imatges/descarga.png" type="image/png" />
+            <img src="assets/imatges/descarga.png" alt="" />
+          </picture>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Enllaços</h2>
+
+          <p class="mb-3">
+            Per fer un enllaç s’utilitza l’etiqueta <b>&lt;a&gt;</b>. Dins hi
+            poses el text que vols que sigui clicable, i amb
+            <code>href</code> li dius on ha d’anar.
+          </p>
+
+          <p class="mb-3">
+            Si poses un <b>href</b> amb una web com <code>https://...</code>, va
+            a una pagina web. Si poses <code>#</code> amb un ID, va a una part
+            de la mateixa pagina html.
+          </p>
+
+          <p class="mb-3">
+            Si vols que s’obri en una pestanya nova, has d’afegir
+            <code>target="_blank"</code>, sino recarrega la pagina i es veu la
+            web clicada.
+          </p>
+
+          <p class="mb-3">
+            Exemple:
+            <code
+              >&lt;a href="https://www.youtube.com/"
+              target="_blank"&gt;Youtube&lt;/a&gt;</code
+            >
+          </p>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Llistes</h2>
+
+          <p class="mb-3">
+            Hi ha dos tipus principals: no ordenades i ordenades.
+          </p>
+
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">
+              <b>&lt;ul&gt;</b>: llista no ordenada, amb punts.
+            </li>
+            <li class="list-group-item">
+              <b>&lt;ol&gt;</b>: llista ordenada, amb numeros.
+            </li>
+            <li class="list-group-item">
+              <b>&lt;li&gt;</b>: cada element de la llista, va dins de
+              <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code>.
+            </li>
+          </ul>
+
+          <p class="mb-3">Exemple llista no ordenada:</p>
+          <p>
+            <code
+              >&lt;ul&gt;<br />
+              &nbsp;&nbsp;&lt;li&gt;Pa&lt;/li&gt;<br />
+              &nbsp;&nbsp;&lt;li&gt;Llet&lt;/li&gt;<br />
+              &nbsp;&nbsp;&lt;li&gt;Aigua&lt;/li&gt;<br />
+              &lt;/ul&gt;</code
+            >
+          </p>
+
+          <p class="mb-3">Exemple llista ordenada:</p>
+          <p>
+            <code
+              >&lt;ol&gt;<br />
+              &nbsp;&nbsp;&lt;li&gt;Encendre l’ordinador&lt;/li&gt;<br />
+              &nbsp;&nbsp;&lt;li&gt;Obrir el Google&lt;/li&gt;<br />
+              &nbsp;&nbsp;&lt;li&gt;Entrar a la web&lt;/li&gt;<br />
+              &lt;/ol&gt;</code
+            >
+          </p>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Taules</h2>
+
+          <p class="mb-3">
+            Una taula serveix per posar dades com si fos una graella. Té files i
+            columnes.
+          </p>
+
+          <p class="mb-3">
+            Es fa servir <b>&lt;table&gt;</b> per crear-la. A dins s’hi posen
+            les files amb <b>&lt;tr&gt;</b>. Després, a cada fila, es posen les
+            cel·les: <b>&lt;td&gt;</b> per dades normals, i <b>&lt;th&gt;</b> si
+            es vol cabeçera.
+          </p>
+
+          <p class="mb-3">Exemple de taula:</p>
+
+          <div class="container">
+            <table>
+              <tr>
+                <th>Animal</th>
+                <th>Habitat</th>
+                <th>Alimentacio</th>
+              </tr>
+              <tr>
+                <td>Lleo</td>
+                <td>Savana</td>
+                <td>Carnivor</td>
+              </tr>
+              <tr>
+                <td>Os polar</td>
+                <td>Artic</td>
+                <td>Carnivor</td>
+              </tr>
+              <tr>
+                <td>Elefant</td>
+                <td>Selva</td>
+                <td>Hervivor</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Audio i Video</h2>
+
+          <div class="d-flex justify-content-between mb-4">
+            <!-- Video -->
+            <div>
+              <h5>Video</h5>
+              <ul>
+                <li><code>&lt;video&gt;</code> amb <code>controls</code></li>
+                <li><code>&lt;source&gt;</code> amb ruta i tipus</li>
+              </ul>
+            </div>
+
+            <!-- Audio -->
+            <div>
+              <h5>Audio</h5>
+              <ul>
+                <li><code>&lt;audio&gt;</code> amb <code>controls</code></li>
+                <li><code>&lt;source&gt;</code> amb mp3 o ogg</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Explicacions -->
+          <p class="mb-3">
+            <b>&lt;video&gt;</b>: serveix per posar videos que es poden veure a
+            la pagina. Si poses <code>controls</code>, surt el play, pausa i tot
+            aixo. Dins s’hi posa un <code>&lt;source&gt;</code> amb la ruta i el
+            tipus.
+          </p>
+
+          <p class="mb-3">Exemple:</p>
+          <video controls width="300">
+            <source
+              src="assets/videoAudio/No Hice la Tarea.mp4"
+              type="video/mp4"
+            />
+            Sketch
+          </video>
+
+          <br /><br />
+
+          <p class="mb-3">
+            <b>&lt;audio&gt;</b>: paregut al video pero nomes per so. Tambe
+            porta <code>controls</code> i dins un
+            <code>&lt;source&gt;</code> amb l’arxiu mp3 o ogg.
+          </p>
+
+          <audio controls>
+            <source
+              src="assets/videoAudio/No Hice la Tarea.mp3"
+              type="audio/mpeg"
+            />
+            Audio
+          </audio>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4">Iframe</h2>
+
+          <p class="mb-3">
+            L’etiqueta <b>&lt;iframe&gt;</b> serveix per mostrar una altra web o
+            contingut dins la teva pagina.
+          </p>
+
+          <p class="mb-3">
+            Es pot utilitzar per posar videos de YouTube, mapes de Google o una
+            altra web sencera.
+          </p>
+
+          <p class="mb-3">
+            Es fa servir l’atribut <code>src</code> per dir la ruta, i tambe
+            pots afegir <code>width</code>, <code>height</code>,
+            <code>frameborder</code>, etc.
+          </p>
+
+          <p class="mb-3">Exemple bàsic:</p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1181.406418930278!2d0.5693992075599927!3d41.82858914558436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1747833039907!5m2!1ses!2ses"
+            width="600"
+            height="450"
+          ></iframe>
+        </section>
+
+        <!---->
+      </main>
+    </section>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
