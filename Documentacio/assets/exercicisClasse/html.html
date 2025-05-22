@@ -1,0 +1,1045 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css.css" />
+    <style>
+      /*estils interns*/
+    </style>
+  </head>
+  <body>
+    <h1 id="index-css">Introduccio al css</h1>
+    <a href="html.html#selectors-basics">Selectors basics</a>
+    <br />
+    <a href="html.html#selectors-avançats">Selectors avançats</a>
+    <br />
+    <a href="html.html#selector-universal">Selector universal</a>
+    <br />
+    <a href="html.html#pseudoclasses">les pseudoclasses</a>
+    <br />
+    <a href="html.html#pseudoelements">Pseudoelements</a>
+    <br />
+    <a href="html.html#agruparselectors">Com agrupar selectors</a>
+    <br />
+    <a href="html.html#algorisme-css">L'algorisme de css</a>
+    <br />
+    <a href="html.html#model-caixa">Model de caixa</a>
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <br />
+    <article id="selectors-basics">
+      <h2>Selectors basics</h2>
+      <div style="background-color: blue">fdiguh</div>
+      <div class="lorem">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum earum
+        dolorem tenetur facere quibusdam perspiciatis vitae architecto a autem
+        hic atque delectus aliquam, dolor sed nostrum voluptatum quisquam,
+        assumenda dolore.
+      </div>
+
+      <p class="paragraf text-30">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        autem tempore reiciendis doloremque vitae tempora provident blanditiis
+        accusamus quae et! Eius quam odio adipisci culpa suscipit! Sapiente
+        adipisci veniam nemo!
+      </p>
+      <p id="paragraf1" class="text-20">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+        aliquam! Impedit neque iusto accusamus ipsa. Omnis nulla et, cumque,
+        ipsa doloribus velit voluptatem modi veritatis nam labore similique
+        voluptates quia.
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+      <hr />
+    </article>
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <header></header>
+    <article id="selectors-avançats"></article>
+    <h2>selectors-avançats</h2>
+    <h3>
+      Selectors fills - directes (>): Estan al primer nivell. Inmediatament
+      despres de l'element seleccionat
+    </h3>
+    <ul class="fills-directes">
+      <li>
+        <b>Primavera</b>
+      </li>
+      <li>
+        <b>Estiu</b>
+      </li>
+      <li>
+        <b>Tardor</b>
+      </li>
+      <li>
+        <b>Hivern</b>
+      </li>
+    </ul>
+    <h3>
+      Selectors fills - descendents ( ) : L'operador es l'espai en blanc. Son
+      els elements que estan per sota del fill de l'element de referencia.
+    </h3>
+    <ul class="fills-descendents">
+      <li>
+        <b>Primavera</b>
+      </li>
+      <li>
+        <b>Estiu</b>
+      </li>
+      <li>
+        <b>Tardor</b>
+      </li>
+      <li>
+        <b>Hivern</b>
+      </li>
+    </ul>
+
+    <h3>
+      Selectors germans - Germans en general (~) (Alt Gr + 4): Aplica al mateix
+      nivell i a partir de l'element de referencia.
+    </h3>
+    <ul>
+      <li>
+        <b>Primavera</b>
+      </li>
+      <li class="germans-general">
+        <b>Estiu</b>
+      </li>
+      <li>
+        <b>Tardor</b>
+      </li>
+      <li>
+        <b>Hivern</b>
+      </li>
+    </ul>
+    <h3>
+      Selectors germans adjaçents (+): aplica al mateix nivell i unicament al
+      germa a partir de l'element de referencia
+    </h3>
+    <ul>
+      <li class="germans-adjaçents">
+        <b>Primavera</b>
+      </li>
+      <li>
+        <b>Estiu</b>
+      </li>
+      <li>
+        <b>Tardor</b>
+      </li>
+      <li>
+        <b>Hivern</b>
+      </li>
+    </ul>
+    <h3>Selectors d'atribut</h3>
+    <p>
+      podem apllicar estils css utilitzant com a referencia qualsevol atribut de
+      qualsevol etiqueta html
+    </p>
+    <nav class="selectors-atributs">
+      <ul>
+        <li>
+          <a href="" target="_blank">inici</a>
+        </li>
+        <li>
+          <a href="" target="_blank">assignatures</a>
+        </li>
+        <li>
+          <a href="" target="_blank">blog</a>
+        </li>
+        <li>
+          <a target="_blank">notes</a>
+        </li>
+        <li>
+          <a href="" target="https://www.google.es">Curriculum vitae</a>
+        </li>
+        <li>
+          <a href="" target="_blank">actualment</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h3>Selectors d'atribut amb un determinat valor ([atribut=valor])</h3>
+    <p>
+      Aplicaria estils a qualsevol etiqueta que tingui l'atribut amb el valor
+      determinat
+    </p>
+    <h3>
+      Selectors d'atribut amb un patro ([atribut*=patro]): Aplica a qualsevol
+      atribut d'etiqueta que conte un determinat patro com a part del valor de
+      l'atribut
+    </h3>
+    <nav class="selectors-atributs">
+      <ul>
+        <li>
+          <a href="index.html" target="_blank">inici</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">assignatures</a>
+        </li>
+        <li>
+          <a href="" target="_blank">blog</a>
+        </li>
+        <li>
+          <a href="" target="_blank">notes</a>
+        </li>
+        <li>
+          <a href="" target="https://www.google.es">Curriculum vitae</a>
+        </li>
+        <li>
+          <a href="index.html" target="_blank">actualment</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h3>Selectors d'atribut que comença amb un patro ([atribut^="patro"])</h3>
+
+    <h3>Selectors d'atribut que acaba amb un patro ([atribut$="patro"])</h3>
+    <nav class="selectors-atributs">
+      <ul>
+        <li>
+          <a href="" target="_blank">inici</a>
+        </li>
+        <li>
+          <a href="" target="_blank-css">assignatures</a>
+        </li>
+        <li>
+          <a href="" target="_blank">blog</a>
+        </li>
+        <li>
+          <a href="" target="_blank">notes</a>
+        </li>
+        <li>
+          <a href="" target="https://www.google.es">Curriculum vitae</a>
+        </li>
+        <li>
+          <a href="" target="_blank-css">actualment</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h3>Que hi hagi un patro en una llista de valors ([atribut~="patro"])</h3>
+    <nav class="selectors-atributs">
+      <ul>
+        <li>
+          <a href="" target="_blank" class="menu-item cursos button">inici</a>
+        </li>
+        <li>
+          <a href="" target="_blank-css">assignatures</a>
+        </li>
+        <li>
+          <a href="" target="_blank">blog</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="menu-item curso button">notes</a>
+        </li>
+        <li>
+          <a href="" target="https://www.google.es">Curriculum vitae</a>
+        </li>
+        <li>
+          <a href="" target="_blank-css">actualment</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h3>Selector uni ([atribut~="patro"])</h3>
+    <nav class="selectors-atributs">
+      <ul>
+        <li>
+          <a href="" target="_blank" class="menu-item cursos button">inici</a>
+        </li>
+        <li>
+          <a href="" target="_blank-css">assignatures</a>
+        </li>
+        <li>
+          <a href="" target="_blank">blog</a>
+        </li>
+        <li>
+          <a href="" target="_blank" class="menu-item curso button">notes</a>
+        </li>
+        <li>
+          <a href="" target="https://www.google.es">Curriculum vitae</a>
+        </li>
+        <li>
+          <a href="" target="_blank-css">actualment</a>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <header></header>
+    <article id="selector-universal">
+      <h2>Selector universal</h2>
+      <p>
+        Utilitza com a referencia el comodi * que aplicara estils a tots els
+        elements html del document
+      </p>
+      <p>
+        selector universal contextual aplica estils a tot els html del document
+      </p>
+      <ul class="selector-universal-contextual">
+        <li>
+          <b>Estiu</b>
+        </li>
+        <li>
+          <b>Primavera</b>
+        </li>
+        <li>
+          <b>Hivern</b>
+        </li>
+
+        <li>
+          <b>Tardor</b>
+        </li>
+      </ul>
+
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <header></header>
+    <article id="pseudoclasses">
+      <h2>Pseudoclasses</h2>
+      <p>
+        Les pseudoclasses aplicaran estils depenent del context, la posicio o de
+        certss estats que tinguin lelement html en questio. Les pseudoclasses
+        començen amb 2 punts (:)
+      </p>
+      <form method="post" class="form-pseudoclasses">
+        <input
+          type="text"
+          name="nom"
+          placeholder="INTRODUEIX EL NOM"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          name="correu"
+          placeholder="INTRODUEIX EL CORREU"
+          disabled
+        />
+        <br />
+        <input type="submit" />
+      </form>
+      <br />
+      <p></p>
+
+      <nav class="menu-pseudoclasses">
+        <a href="Seccio 1">Seccio 1</a>
+        <a href="Seccio 2">Seccio 2</a>
+        <a href="Seccio 3">Seccio 3</a>
+        <a href="Seccio 4">Seccio 4</a>
+      </nav>
+
+      <h3>Pseudoclasses que es basen en la posicio i en el tipus d'element</h3>
+
+      <nav class="pseudoclasses-per-posicio">
+        <ol class="llista-pseudoclasses">
+          <li>Gener</li>
+          <li>Febrer</li>
+          <li>Març</li>
+          <li>Abril</li>
+          <li>Maig</li>
+          <li>Juny</li>
+          <li>Juliol</li>
+          <li>Agost</li>
+          <li>Septembre</li>
+          <li>Ovtubre</li>
+          <li>Novembre</li>
+          <li>Desembre</li>
+        </ol>
+      </nav>
+
+      <article class="article-pseudoclasses">
+        <header>Aixo es una capçalera</header>
+        <p>Aixo es un paragraf</p>
+        <div>Aixo es un div</div>
+        <p>Aixo es un altre paragraf</p>
+        <section>Aixo es una seccio</section>
+        <p>Aixo es un altre paragraf mes</p>
+        <div>Aixo es una altra div</div>
+        <p>Aixo es un altre paragraf mes, altre cop</p>
+        <footer>Aixo es un peu de pagina</footer>
+      </article>
+
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+
+    <hr />
+    <br />
+    <br />
+    <br />
+    <article id="pseudoelements">
+      <h2>Pseudoelements</h2>
+      <p>
+        Ens permeten ficar estils a una part especifica de un element.
+        S'utilitzen els dobles dos punts (::). Els pseudoelements apliquen a
+        qualsevol element de bloc (p, div, ...)
+      </p>
+
+      <p>
+        <i>Moneda iberica</i>
+        <span class="iltirta-zona">Iltirta</span>
+        <span class="iltirta-preu">150</span>
+      </p>
+      <p class="p-pseudoelement">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+        mollitia est necessitatibus corporis deserunt. Placeat aspernatur minima
+        incidunt quisquam tenetur, quis accusamus. Labore mollitia tempore
+        similique minima, eveniet velit soluta! Libero nam tempora officia
+        itaque accusamus consequatur beatae eveniet quo. Veniam nam ea id.
+        Libero expedita aliquam, officiis aliquid repellat fugit amet dolorum
+        doloribus voluptatem et pariatur voluptate perspiciatis earum.
+      </p>
+      <input
+        type="text"
+        class="input-pseudoelement"
+        name="nom"
+        placeholder="Introdueix el nom"
+      />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <article id="agruparselectors">
+      <h2>Agrupar selectors</h2>
+      <p>
+        Serveix per quan volem aplicar els mateixos estils a diferents selectors
+        Utilitzem la coma per llistar els selectors als quals volem aplicar els
+        mateixos estils
+      </p>
+
+      <form method="post" class="agrupar-selectors">
+        <input type="text" placeholder="Introdueix el nom" name="nom" />
+        <input type="email" name="correu" placeholder="Introdueix el correu" />
+        <textarea
+          name="comentaris"
+          placeholder="Escriu un comentari"
+        ></textarea>
+        <input type="submit" />
+      </form>
+
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <article id="algorisme-css">
+      <h2>L'algoritme de css</h2>
+      <p>
+        L'algoritme CSS es la forma en que el navegador aplicara els estils als
+        documents HTML. Es molt important entendre-ho per saber com s'apliquen i
+        alguns casos com es sobreescriuen les regles CSS. Per entendre
+        l'algorisme css cal tenis clars els seguents conceptes
+      </p>
+      <ol>
+        <li>La cascada</li>
+        <li>L'especifitat</li>
+        <li>L'herencia</li>
+      </ol>
+      <ol>
+        <li>
+          <h3>La Cascada. Depen de :</h3>
+        </li>
+      </ol>
+
+      <p>L'origen del codi. Es d'on ve el codi. Hi ha tres possibilitats:</p>
+      <ol>
+        <li>User Agent</li>
+        <li>Personalitzacions de l'usuari</li>
+        <li>Estils d'autor</li>
+      </ol>
+
+      <h3>Especifitat</h3>
+
+      <ol class="">
+        <li>Per cada etiqueta o pseudoelements suma 1 al 1r digit 0,0,0,1</li>
+        <li>
+          Classes, atributs o pseudoclasses suma 1 al 2n digit 0,0,1,0 per cada
+        </li>
+        <li>Identificador, suma 1 al 3r digit 0,1,0,0 per cada</li>
+        <li>Suma 1 al 4rt digit 1,0,0,0</li>
+      </ol>
+
+      <blockquote id="cita" class="cita" style="background-color: yellow">
+        Cuando el grajo vuela bajo hace un frio del carajo
+        <cite>Autor desconegut</cite>
+      </blockquote>
+
+      <h3>La herencia</h3>
+      <p>
+        No tots els estis s'ereten. Per exemple, els borders no s'ereten, el
+        background-color tampoc s'ereten
+      </p>
+
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <article id="model-caixa">
+      <h2>Model de caixa</h2>
+      <p>
+        Es la forma en que css interpreta les etiquetes html
+        <br />
+        per a css cada una de les etiquetes html es una caixa.
+      </p>
+
+      <div class="content-box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum
+          quia animi unde voluptates, quasi non officia rerum porro nam,
+          distinctio natus officiis praesentium saepe voluptatem consequuntur
+          odio veritatis sed. Maxime nam beatae impedit obcaecati molestiae
+          eaque cum repellendus cumque sint mollitia? Optio commodi architecto,
+          asperiores qui fugit
+        </p>
+      </div>
+
+      <div class="border-box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum
+          quia animi unde voluptates, quasi non officia rerum porro nam,
+          distinctio natus officiis praesentium saepe voluptatem consequuntur
+          odio veritatis sed. Maxime nam beatae impedit obcaecati molestiae
+        </p>
+      </div>
+
+      <p>Tipus de caixes</p>
+
+      <ul>
+        <li>En linea (Elements del formulari, span, p)</li>
+        <li>
+          En block (div, section, tags semantics (nav, main, article, header,
+          footer))
+        </li>
+      </ul>
+
+      <h3>Les caixes en block</h3>
+      <div>
+        <p>Es comporten de la seguent forma:</p>
+        <ul>
+          <li>
+            La caixa ocupa tota la linea i força un salt de linea al final
+          </li>
+          <li>
+            La caixa s'exten en la direccio de la linea fins al final.
+            Generalment significa que la caixa tindra l'amplada del seu
+            contenedor i omplira el 100% de l'espai disponible
+          </li>
+          <li>Es respecten les propietats width i height</li>
+          <li>
+            El padding, el border i el marge (Aquest ultim mante allunyats de a
+            caixa la resta d'elements) s'apliquen
+          </li>
+        </ul>
+      </div>
+
+      <h3>Les caixes el linea</h3>
+      <p>Les caixes en linea es comporten de la seguent forma:</p>
+      <br />
+      <ul>
+        <li>
+          La caixa nomes ocupa l'espai que ocupa el seu contingut i no força un
+          salt de linea.
+        </li>
+        <li>
+          Les propietats width i height
+          <b>NO</b>
+          s'apliquen.
+        </li>
+        <li>
+          El padding, el border i el margin
+          <b>Verticals</b>
+          s'apliquen, pero,
+          <b>NO</b>
+          mantenen allunyades altres caixes en linea
+        </li>
+        <li>
+          El padding, el border i el margin
+          <b>Horitzontals</b>
+          s'apliquen i mantenen allunyades altres caixes en linea
+        </li>
+      </ul>
+
+      <p class="paragraf">
+        Estem cursant el modul
+        <span class="span1">M6 Desenvolupament web en entorn client</span>
+        forma part del cicle de
+        <span class="span2">Desenvolupament d'Aplicacions Web</span>
+        de l'Institut
+        <b>Almata</b>
+        de Balaguer
+      </p>
+
+      <h3>La propietat display</h3>
+      <p>
+        Aquesta propietat ens permet mostrar les caixes i quin comportament CSS
+        aplica per visualitzar els elements. Valors que pot pendrer:
+      </p>
+      <ol>
+        <li>none</li>
+        <li>inline</li>
+        <li>block</li>
+        <li>inline-block</li>
+        <li>list-item</li>
+        <li>table</li>
+        <li>table-cell</li>
+        <li>table-row</li>
+        <li>flex</li>
+        <li>inline-flex</li>
+        <li>grid</li>
+        <li>inline-grid</li>
+      </ol>
+
+      <h3>display=none</h3>
+      <p>
+        S'utilitza per mostrar/ocultar elements html, per exemple missatger
+        d'error de un formulari. I no reserva l'espai de l'element quan esta
+        ocult, en canvi el visivility hidden si que el reserva. Pero el none
+        carregara igualment el contingut
+      </p>
+
+      <div class="caixa-none">
+        <p>
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            quod, quis beatae nam assumenda itaque voluptas nostrum, distinctio
+            adipisci deserunt unde in pariatur modi error soluta recusandae
+            totam voluptate. Cumque.
+          </span>
+          <span>
+            Quod quisquam provident maiores libero placeat voluptate mollitia
+            eius alias facilis. Nihil quas maxime quia illum? Commodi laboriosam
+            quae asperiores dolore laborum. Iste soluta suscipit sed delectus
+            sapiente quam aspernatur?
+          </span>
+        </p>
+      </div>
+
+      <div>
+        <p>Fora display-none</p>
+      </div>
+
+      <h3>Display inline-block</h3>
+      <p>
+        Es comporta com un element inline pero que a mes accepta aplicar
+        <b>width</b>
+        i
+        <b>height</b>
+      </p>
+
+      <div class="caixa-inline-block">
+        Es una caixa
+        <span>inline-block</span>
+      </div>
+
+      <br />
+      <br />
+
+      <table style="border: medium solid black">
+        <tr>
+          <td>cela 1</td>
+          <td>cela 2</td>
+          <td>cela 3</td>
+        </tr>
+        <tr>
+          <td>cela 1</td>
+          <td>cela 2</td>
+          <td>cela 3</td>
+        </tr>
+        <tr>
+          <td>cela 1</td>
+          <td>cela 2</td>
+          <td>cela 3</td>
+        </tr>
+        <tr>
+          <td>cela 1</td>
+          <td>cela 2</td>
+          <td>cela 3</td>
+        </tr>
+        <tr>
+          <td>cela 1</td>
+          <td>cela 2</td>
+          <td>cela 3</td>
+        </tr>
+      </table>
+      <hr />
+      <h3>La propietat visibility</h3>
+      <p>La propietat visibility te posssibles valors:</p>
+      <ol>
+        <li>hidden</li>
+        <li>visible</li>
+      </ol>
+      <p>
+        No confondre amb display-none. visivility: hidden desapareix el
+        contingut pero queda l'espai que ocupava el contingut
+      </p>
+
+      <div class="visibility">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus
+          sequi expedita fugiat reiciendis asperiores ab, nam dolore hic
+          doloribus consequatur, distinctio dignissimos illum dolorum deleniti
+          quaerat quae ut accusamus?
+        </div>
+        <div>
+          Tempora veniam accusamus non repellendus eveniet? Sunt velit
+          blanditiis perferendis nisi, laboriosam quis quibusdam autem sed
+          repudiandae sit ipsam expedita reiciendis excepturi porro eveniet
+          earum? Voluptate libero temporibus illum illo.
+        </div>
+      </div>
+
+      <div>
+        <h3>La propietat overflow (Desbordament del contingut)</h3>
+        <p>
+          Que passara amb el contingut que desbordi la seva caixa contenidora?
+        </p>
+        <p>Decidirem com actuar amb un dels 3 possibles valors:</p>
+        <ul>
+          <li>Visible</li>
+          <li>Hidden</li>
+          <li>Scroll</li>
+          <li>Auto</li>
+        </ul>
+        <div class="overflow">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, sed
+          odio. Modi, pariatur! Rerum maxime a quibusdam at deserunt, fugit
+          beatae nihil praesentium ratione voluptates dicta amet alias quas
+          eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Natus voluptatem amet veritatis officiis sequi exercitationem delectus
+          qui quidem accusantium corrupti adipisci dicta quasi ea facere,
+          nostrum excepturi esse praesentium fugit? Beatae omnis modi ex numquam
+          cupiditate neque architecto dolores, ipsum laudantium perferendis
+          repellat id voluptatibus fuga iste consequatur accusantium illum?
+          Saepe dolores reprehenderit eaque iusto voluptates? Tenetur fugit
+          recusandae animi.
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <hr />
+      <br />
+      <h3>Exemle de maquetacio en tres columnes (old)</h3>
+      <article class="container-col-3">
+        <section class="item">seccio 1</section>
+        <section class="item">seccio 2</section>
+        <section class="item">seccio 3</section>
+      </article>
+
+      <h3>Colapses de marges</h3>
+      <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ad
+        laborum illo eaque fugiat, porro perferendis dolore, expedita totam
+        ratione sit itaque ipsa tempore a sunt sed. Unde, non eum. Sunt
+        doloribus fugiat enim perferendis sint eius quibusdam nam recusandae
+        quis ea ducimus aut non sit, quia officiis optio asperiores veniam
+        consequatur distinctio? Magnam illo hic reprehenderit exercitationem
+        quaerat omnis.
+      </div>
+      <article class="colapse">
+        <section>section 1</section>
+        <section>section 2</section>
+        <section>
+          <span>span 1</span>
+          <span>span 2</span>
+          <span>span 3</span>
+        </section>
+      </article>
+
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+    <div class="sticky2">Caixa sticky Tema1</div>
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <article id="">
+      <h2>centrat de caixes</h2>
+      <p>No confondrer amb centrat de contingut</p>
+      <article class="side-web">
+        <header>Capçalera</header>
+        <main>Contingut principal</main>
+        <footer>Peu de pagina</footer>
+      </article>
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+
+      <h3>El posicionament</h3>
+      <p>
+        Les propietats FLOAT i POSITION ens permeten modificar la posici natural
+        de qualsevol element del document HTML
+      </p>
+      <p>
+        El navegador posiciona cada element tenint en compte l'ordre en el que
+        apareixen al document (esquerra a dreta i de dalt a baix) i del seu
+        tipus de visualitzacio depenent de si es un element en linea o en block
+      </p>
+      <p>amb FLOAT i POSITION podem modificar aquest comportament</p>
+      <h3>Tipus de posicionaments</h3>
+      <ul>
+        <li>static (default)</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+      </ul>
+      <p>
+        <b>Per mourer i posicionar els elements</b>
+        amb relative, absolute, fixed o sticky utilitzarem les propietats:
+      </p>
+      <ul>
+        <li>top</li>
+        <li>bottom</li>
+        <li>left</li>
+        <li>right</li>
+        <li>z-index(profunditat, eix z)</li>
+      </ul>
+      <p>
+        Aquestes 5 propietat
+        <b>NO funcionen</b>
+        amb el valor per defecte static! Perque static significa respectar el
+        flux original del posicionament dels elements
+      </p>
+      <p>
+        Les propietats
+        <b>top i left</b>
+        tenen prioritat respecte
+        <b>bottom i right</b>
+        respectivament. En cas de conflicte, entre aplicar top o bottom,
+        s'aplicara top. En cas de conflicte entre aplicar left o right,
+        s'aplicara left.
+      </p>
+
+      <h3>Posicionament static</h3>
+      <p>
+        En aquest posicionament
+        <b>NO</b>
+        s'apliquen left, right, top, bottom i z-index
+      </p>
+      <div class="static">Caixa estatica</div>
+
+      <h3>Posicionament relative</h3>
+      <p>
+        Aquest posicionament l'element
+        <b>conserva les dimensions i el posicionament original</b>
+        dns el flux del document. Si es mou com a referencia la seva posicio
+        original
+      </p>
+      <div class="relative">Caixa relativa</div>
+
+      <div class="absolute">Caixa absluta</div>
+      <p>
+        L'element perd les seuves dimensions (width i height) i la posicio
+        original al flux del document, si es mou, pot prendre cm a referencia 2
+        elements:
+      </p>
+      <ol>
+        <li>El primer ancestre amb posicionament relatiu</li>
+        <li>
+          Si no troba cap ancestre amb posicionament relatiu, es mou respecte el
+          document html
+        </li>
+      </ol>
+
+      <div class="relative-parent">
+        <div class="absoute-child">Caixa absoluta amb pare relatiu</div>
+      </div>
+
+      <h3>Posicionament Fixed</h3>
+      <p>
+        Perd les dimensions i posicio original del flux del document. Si es mou
+        pren com a referencia el document html i queda fix a la posicio on l'hem
+        mogut. Quan hi hagi un scroll l'element no es moura, quedara fix.
+      </p>
+
+      <div class="fixed">Caixa fixa</div>
+
+      <h3>Posicionament sticky</h3>
+      <p>
+        Es una combinacio de posicionament relatiu i fixed. En aquest
+        posicionament les propietats top, left, bottom i right no mouen
+        l'element, en comptes de mourel serveixen com a punt de referenciamentre
+        l'element no arrivi als valors establerts. Mentre no s'arrivi a les
+        posicions establertes per les propietats l'element es comportara com a
+        relatiu i cuan arrivi a les posicionses convertira en fixed.
+      </p>
+      <p>Hi ha 2 opcions d'implementaci:</p>
+      <ul>
+        <li>L'element sticky ha de ser fill directe del body</li>
+        <li>
+          El seu element contenedor ha de tenir dimensions definides i nomes
+          serea sticky dins de les dimensions del contenedor
+        </li>
+      </ul>
+    </article>
+    <article class="contenedor_sticky">
+      <div class="sticky">Caixa sticky Tema2</div>
+    </article>
+    <p>
+      <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore animi
+        eligendi consectetur. Veritatis et quam, pariatur fugiat incidunt at,
+        eveniet, dolore facere illum nihil cupiditate ea cum quasi! Dolor,
+        nostrum?
+      </span>
+      <br />
+      <br />
+      <br />
+      <span>
+        Voluptatem distinctio corporis esse necessitatibus, doloremque molestiae
+        ipsam ullam minima, cumque eaque quaerat aperiam magnam quisquam eum
+        adipisci nesciunt tenetur expedita soluta ipsum culpa. Quo, iusto culpa!
+        Blanditiis, aperiam accusantium.
+      </span>
+      <br />
+      <br />
+      <br />
+      <span>
+        Nesciunt sint quidem amet? Quibusdam recusandae quisquam inventore
+        repudiandae placeat expedita? Exercitationem doloremque laborum fugiat
+        excepturi cum sapiente a deleniti, recusandae, vero iste corporis
+        corrupti aperiam laudantium ex labore consequatur?
+      </span>
+      <br />
+      <br />
+      <br />
+      <span>
+        Maiores id vel asperiores non explicabo mollitia laborum similique
+        necessitatibus debitis laudantium. Cupiditate ad quisquam, ducimus eos
+        similique rerum dolorem et rem ut amet repellat? Quae sit iste alias
+        explicabo!
+      </span>
+      <br />
+      <br />
+      <br />
+      <span>
+        Temporibus aspernatur provident quibusdam, animi suscipit nostrum rem ad
+        autem ullam aliquid beatae veritatis dolorum, nisi mollitia obcaecati
+        veniam dolore totam porro, necessitatibus voluptate culpa? Accusantium
+        repellendus minus provident magnam.
+      </span>
+      <br />
+      <br />
+      <br />
+    </p>
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <article id="">
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <article id="">
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+
+    <br />
+    <br />
+    <br />
+    <hr />
+
+    <article id="">
+      <a href="html.html#index-css" style="font-size: 4rem">☝️</a>
+    </article>
+  </body>
+</html>
+;

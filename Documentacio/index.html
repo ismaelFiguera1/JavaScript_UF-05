@@ -7,14 +7,66 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
   </head>
   <body>
-    <header></header>
+    <header class="bg-dark mb-4">
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <a class="navbar-brand" href="#">Documentació HTML</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#estructura">Estructura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#etiquetes">Etiquetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#etiquetesText">Text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#imatges">Imatges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#enllacos">Enllaços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#llistes">Llistes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#taules">Taules</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#audioVideo">A/V</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iframe">Iframe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#etiquetesCodi">Codi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dataList">Datalist</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <section class="container">
       <header class="container text-center"><h1>HTML</h1></header>
       <main class="container">
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Estructura basica HTML</h2>
+          <h2 class="card-title text-center mb-4" id="estructura">
+            Estructura basica HTML
+          </h2>
 
           <ul class="list-group list-group-flush mb-4">
             <li class="list-group-item"><code>&lt;head&gt;</code></li>
@@ -84,7 +136,7 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">
+          <h2 class="card-title text-center mb-4" id="etiquetes">
             Etiquetes estructurals i web semantica
           </h2>
 
@@ -135,7 +187,9 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Etiquetes de text</h2>
+          <h2 class="card-title text-center mb-4" id="etiquetesText">
+            Etiquetes de text
+          </h2>
 
           <ul class="list-group list-group-flush mb-4">
             <li class="list-group-item"><code>&lt;h1&gt;-&lt;h6&gt;</code></li>
@@ -169,7 +223,7 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Imatges</h2>
+          <h2 class="card-title text-center mb-4" id="imatges">Imatges</h2>
 
           <ul class="list-group list-group-flush mb-4">
             <li class="list-group-item"><code>&lt;img&gt;</code></li>
@@ -201,7 +255,7 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Enllaços</h2>
+          <h2 class="card-title text-center mb-4" id="enllacos">Enllaços</h2>
 
           <p class="mb-3">
             Per fer un enllaç s’utilitza l’etiqueta <b>&lt;a&gt;</b>. Dins hi
@@ -233,7 +287,7 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Llistes</h2>
+          <h2 class="card-title text-center mb-4" id="llistes">Llistes</h2>
 
           <p class="mb-3">
             Hi ha dos tipus principals: no ordenades i ordenades.
@@ -278,7 +332,7 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Taules</h2>
+          <h2 class="card-title text-center mb-4" id="taules">Taules</h2>
 
           <p class="mb-3">
             Una taula serveix per posar dades com si fos una graella. Té files i
@@ -323,10 +377,11 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Audio i Video</h2>
+          <h2 class="card-title text-center mb-4" id="audioVideo">
+            Audio i Video
+          </h2>
 
           <div class="d-flex justify-content-between mb-4">
-            <!-- Video -->
             <div>
               <h5>Video</h5>
               <ul>
@@ -334,8 +389,6 @@
                 <li><code>&lt;source&gt;</code> amb ruta i tipus</li>
               </ul>
             </div>
-
-            <!-- Audio -->
             <div>
               <h5>Audio</h5>
               <ul>
@@ -382,7 +435,7 @@
         <!---->
 
         <section class="card bg-light p-4 my-4">
-          <h2 class="card-title text-center mb-4">Iframe</h2>
+          <h2 class="card-title text-center mb-4" id="iframe">Iframe</h2>
 
           <p class="mb-3">
             L’etiqueta <b>&lt;iframe&gt;</b> serveix per mostrar una altra web o
@@ -410,6 +463,70 @@
         </section>
 
         <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4" id="etiquetesCodi">
+            Etiquetes de codi
+          </h2>
+
+          <p class="mb-3">
+            Aquestes etiquetes serveixen per mostrar codi o tecles de teclat
+            dins la pagina.
+          </p>
+
+          <p class="mb-3">
+            <b>&lt;code&gt;</b>: mostra codi en linia. Exemple:
+            <code>&lt;h1&gt;Hola&lt;/h1&gt;</code>
+          </p>
+          <div>
+            <p class="mb-3">
+              <b>&lt;pre&gt;</b>: mostra codi preformatat, respectant espais i
+              salts de linia. Exemple:
+            </p>
+            <pre>
+            &lt;div&gt;
+              &lt;h3&gt;Titol h3&lt;/h3&gt;
+              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, ullam minus, doloribus ab nemo delectus nihil assumenda ipsa architecto dolor id fugiat. Vero similique optio esse maiores ipsam adipisci tenetur.&lt;/p&gt;
+            &lt;/div&gt;
+            </pre>
+          </div>
+        </section>
+
+        <!---->
+
+        <section class="card bg-light p-4 my-4">
+          <h2 class="card-title text-center mb-4" id="dataList">Datalist</h2>
+
+          <p class="mb-3">
+            El <b>datalist</b> serveix per posar una llista de suggeriments dins
+            d’un input. No es com un select, perque aqui pots escriure el que
+            vulguis, i si coincideix amb alguna opcio, et surt la llista. Si no,
+            pots posar el que vulguis igualment.
+          </p>
+          <form>
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom:</label>
+              <input type="text" id="nom" name="nom" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="fruita" class="form-label">Tria una fruita:</label>
+              <input list="fruites" name="fruita" class="form-control" />
+              <datalist id="fruites">
+                <option value="Poma"></option>
+                <option value="Platan"></option>
+                <option value="Taronja"></option>
+                <option value="Maduixa"></option>
+              </datalist>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </section>
+
+        <!---->
+
+        <a href="css.html" class="btn btn-success">Documentacio CSS</a>
       </main>
     </section>
 

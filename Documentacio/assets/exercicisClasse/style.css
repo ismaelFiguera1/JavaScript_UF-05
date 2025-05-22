@@ -1,0 +1,547 @@
+@import url("estils2.css");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/*  Reset model de caixa a Border-box
+*,
+*:after
+*:before 
+*/
+
+/*El importar es bloquejant
+Fins que no ha carregat tot l'arxiu no fa el que hi ha devall*/
+
+/*  selector -> claus ->
+
+/*
+  selector {
+    propietat1: valor;
+    propietat2: valor;
+  }
+*/
+
+* {
+  font-size: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  background-color: white;
+}
+
+.lorem {
+  font-size: 5rem;
+}
+
+/*
+  Selectors basics 
+
+
+    -Selectors basics
+    -Selectors de etiquetes
+*/
+
+/*  Selector d'etiquetes: p S'aplica a tots els paragrafs p  */
+p {
+  color: black;
+}
+
+/*  No es una bona practica ficar estils als id:
+
+  1)  Perque te una especifitat elevada.
+  2)  No podem aprofitar estils aplicats amb is perque son unics
+*/
+
+/*  Aunque una classe i un id tinguin el mateix nom, d'ona igual.
+  Perque son diferents, un es una classe i l'altre es un id.  */
+
+#paragraf1 {
+  color: black;
+}
+
+.paragraf {
+  color: lightgreen;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-30 {
+  font-size: 3rem;
+}
+
+.text-white {
+  color: white;
+}
+
+/*  Fills directes  */
+
+.fills-directes > li {
+  background-color: chocolate;
+}
+
+/*  Aquest cas seria incorrecte perque bold no es fill de ul  */
+.fills-directes > b {
+  background-color: aqua;
+}
+
+/*  Fills desendents  */
+
+.fills-descendents b {
+  background-color: lightgreen;
+}
+
+/*  germans generals  */
+
+/*  Aplica a els seus germans que van cap avall,
+  ell mateix no s'ho fa */
+
+.germans-general ~ li {
+  background-color: blue;
+}
+
+/*  Germans adjaçents */
+
+/*  Tambe sol ho fa als que estan per devall dell */
+
+.germans-adjaçents + li {
+  background-color: blueviolet;
+}
+
+/*  selectors-atributs  */
+
+.selectors-atributs a[href] {
+  background-color: yellow;
+}
+
+/*  Atributs amb valors concrets  */
+
+.selectors-atributs a[target="_blank"] {
+  background-color: red;
+}
+
+/*  Selector dun atribut que començi amb un patro */
+.selectors-atributs a[href*="index"] {
+  font-size: 2rem;
+}
+
+/*  Selector dun atribut que acabi amb un patro */
+.selectors-atributs a[href$="-css"] {
+  font-style: italic;
+}
+
+/*  Selector dun atribut que trobi un patro en una llista de valors*/
+.selectors-atributs a[class~="cursos"] {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*
+Aplica estils a els elements de la classe seleccionada que tinguin l'atribut required
+*/
+.form-pseudoclasses *:required {
+  border-color: yellow;
+}
+
+/*
+Aplica estils a els elements de la classe seleccionada que tinguin contingut correcte
+*/
+
+.form-pseudoclasses *:valid {
+  border-color: green;
+  font-size: 1rem;
+}
+
+/*
+Aplica estils a els elements de la classe seleccionada que tinguin contingut incorrecte
+*/
+
+.form-pseudoclasses *:invalid {
+  border-color: red;
+  font-size: 3rem;
+}
+
+/*
+Aplica estils a els elements de la classe seleccionada que tinguin el focus
+*/
+
+.form-pseudoclasses *:focus {
+  background-color: skyblue;
+}
+
+/*
+Aplica estils a els elements de la classe seleccionada que tinguin el disabled
+*/
+
+.form-pseudoclasses *:disabled {
+  background-color: pink;
+}
+
+/*  Les pseudoclasses interactves 
+    Ordre d'aplicacio de les pseudoclasses
+:link - :visited - :focus - :hover - :active    */
+
+/*  :link   Aplica als elements que encara no s'han visitat */
+
+.menu-pseudoclasses a:link {
+  color: blueviolet;
+}
+
+/*  :visited   Aplica als elements que ja s¡han visitat */
+
+.menu-pseudoclasses a:visited {
+  color: red;
+}
+
+/*  :hover Es quan es passa per damunt de l'element */
+
+.menu-pseudoclasses a:hover {
+  font-size: 140%;
+}
+
+/*  :focus Es quan es selecona l'element */
+
+.menu-pseudoclasses a:focus {
+  background-color: yellow;
+}
+
+/*  :active     Aplica als elements desde que prenem el boto del ratoi sobre lenllaç i fins que e deixem de premer */
+
+.menu-pseudoclasses a:active {
+  color: black;
+}
+
+/*  Pseudclasse aplicada a una URL  */
+
+/*  :target Un target esta actiu quan forma part de la url, lavors pdem aplicar estils amb la pseudoclasse target    */
+
+#index-css:target {
+  background-color: yellowgreen;
+}
+
+/*  pseudoclasses-per-posicio   */
+
+/* Dels elements li de la classe llista-pseudoclasses seleccionem el primer */
+
+.llista-pseudoclasses li:first-child {
+  color: orange;
+}
+
+/* Dels elements li de la classe llista-pseudoclasses seleccionem el darrer */
+
+.llista-pseudoclasses li:last-child {
+  color: rgb(255, 0, 179);
+}
+
+/* Dels elements li de la classe llista-pseudoclasses seleccionem el element "n" */
+
+.llista-pseudoclasses li:nth-child(4) {
+  color: blue;
+}
+
+.llista-pseudoclasses li:nth-child(3n) {
+  color: rgba(128, 128, 128, 0.444);
+}
+
+.llista-pseudoclasses li:nth-child(4n + 1) {
+  font-size: 140%;
+}
+
+.llista-pseudoclasses li:nth-child(even) {
+  background-color: yellow;
+}
+
+.llista-pseudoclasses li:nth-child(odd) {
+  background-color: red;
+}
+
+/*  Subclasses que apliquen a posicio i tius d'etiqueta o element   */
+
+/*  Aixo no estaria be perque el primer element no es un paragraf   */
+.article-pseudoclasses p:first-child {
+  background-color: orange;
+  padding: 3px;
+}
+
+.article-pseudoclasses p:first-of-type {
+  background-color: rgba(255, 166, 0, 0.105);
+  padding: 3px;
+}
+
+.article-pseudoclasses p:last-of-type {
+  background-color: rgba(0, 0, 255, 0.105);
+  padding: 3px;
+}
+
+.article-pseudoclasses p:nth-of-type(3) {
+  color: green;
+  padding: 3px;
+}
+
+/*  La negacio: Aplica a tots els elements excepte...  */
+
+/*
+
+Aplica a tots els elements dins la classe seleccionada excepte
+
+*/
+
+.article-pseudoclasses *:not(p) {
+  font-size: 1rem;
+  padding: 3px;
+}
+
+/*  Pseudoelements  */
+
+/*  ::before    permet afegir contingut avans de l'element seleccionat
+    necessita treballar amb l'atribut "content"    */
+
+.iltirta-zona::before {
+  content: "👌";
+}
+
+.iltirta-preu::after {
+  content: "€";
+}
+
+.p-pseudoelement::first-letter {
+  font-size: 3rem;
+}
+
+.p-pseudoelement::first-line {
+  background-color: bisque;
+}
+
+.p-pseudoelement::selection {
+  background-color: black;
+  color: chartreuse;
+}
+
+/*  nota:   els pseudoelement selection no permet sobreescriurer atributs de tipus text   */
+
+/*  Agrupar selectors   */
+
+.agrupar-selectors input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  background-color: black;
+  font-size: 1.1rem;
+  width: 300px;
+  border: medium dotted yellow;
+}
+
+#cita {
+  background-color: blue;
+}
+
+blockquote.cita {
+  background-color: chartreuse;
+}
+
+.cita {
+  background-color: aqua;
+}
+
+blockquote {
+  background-color: bisque;
+}
+
+cite {
+  background-color: initial !important;
+}
+
+.content-box {
+  background-color: aqua;
+  border: medium solid black;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+.content-box p {
+  font-size: 1rem;
+}
+
+.border-box p {
+  font-size: 1rem;
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: beige;
+  border: medium solid black;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+}
+
+.paragraf {
+  color: black;
+  border: medium solid black;
+  background-color: aquamarine;
+}
+
+.span1,
+.span2 {
+  background-color: beige;
+  border: medium solid black;
+  width: 250px;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.caixa-none {
+  background-color: burlywood;
+  display: none;
+}
+
+.caixa-inline-block {
+  border: thick solid black;
+
+  display: inline-block;
+}
+
+.caixa-inline-block span {
+  border: thick solid black;
+  display: inline-block;
+  width: 300px;
+  height: 500px;
+  margin: 30px;
+}
+
+.visibility {
+  background-color: aquamarine;
+  visibility: hidden;
+}
+
+.overflow {
+  background-color: bisque;
+  width: 100px;
+  height: 100px;
+  overflow: auto;
+}
+
+.container-col-3 {
+  background-color: azure;
+  width: 600px;
+  float: left;
+}
+
+.container-col-3 > * {
+  width: 200px;
+  float: left;
+  border: thin solid black;
+}
+
+.colapse {
+  background-color: aqua;
+}
+
+.colapse > * {
+  border: thin solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.colapse span {
+  border: thin solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.side-web {
+  border: thin solid black;
+  background-color: aquamarine;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.static {
+  background-color: bisque;
+  top: 100px;
+  left: 100px;
+  position: static;
+}
+
+.relative {
+  font-size: 1rem;
+  background-color: cyan;
+  position: relative;
+  top: -50px;
+  left: -50px;
+  bottom: 50px;
+  right: 50px;
+  width: 200px;
+  height: 100px;
+}
+
+.absolute {
+  background-color: blueviolet;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.absoute-child {
+  background-color: antiquewhite;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.relative-parent {
+  background-color: aquamarine;
+  position: relative;
+}
+
+.fixed {
+  background-color: burlywood;
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  left: 30px;
+  bottom: 30px;
+  right: 20px;
+}
+
+.sticky {
+  background-color: chartreuse;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+}
+
+.sticky2 {
+  background-color: yellow;
+  position: sticky;
+  top: 71px;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+.contenedor_sticky {
+  width: 400px;
+  height: 800px;
+}
