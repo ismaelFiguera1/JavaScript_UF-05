@@ -88,7 +88,624 @@
 
       <!---->
 
-      
+      <section class="container my-5">
+        <div class="card border-info bg-info-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-info mb-4">Sintaxi CSS</h2>
+
+            <p class="mb-3">
+              Per posar estils en CSS s’ha de posar primer el selector, despres
+              entre claus s'hi fiquen els valors
+            </p>
+
+            <p class="mb-3">
+              Exemple d’un estil:
+              <code>p { color: red; font-size: 20px; }</code>
+            </p>
+
+            <p class="mb-3">
+              El selector pot ser una etiqueta com <code>h1</code>, una classe
+              amb punt <code>.titol</code>, o un id amb hashtag
+              <code>#principal</code>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-primary bg-primary-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-primary mb-4">Mides</h2>
+
+            <p class="mb-3">
+              Per donar tamanys es fa servir <code>px</code>, <code>%</code>,
+              <code>rem</code> i <code>em</code>.
+            </p>
+
+            <p class="mb-3">
+              <b>px</b> es una mida fixa en pixels. <b>%</b> es una mida
+              relativa al contenidor. <b>rem</b> agafa el tamany segons el
+              navegador. <b>em</b> agafa el tamany segons el element pare.
+            </p>
+
+            <p class="mb-3">
+              Exemple de mida amb pixels: <code>font-size: 30px;</code><br />
+              Exemple amb percentatge: <code>width: 50%;</code><br />
+              Exemple amb rem: <code>font-size: 5rem;</code><br />
+              Exemple amb em: <code>font-size: 2em;</code>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-success bg-success-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-success mb-4">
+              Tipografies
+            </h2>
+
+            <p class="mb-3">
+              Per canviar la lletra es fa servir <code>font-family</code>. Es
+              pot posar una o varies. Per exemple: <code>Arial</code>,
+              <code>Helvetica</code> o <code>sans-serif</code>.
+            </p>
+
+            <p class="mb-3">
+              Amb <code>font-size</code> es pot canviar el tamany del text.
+              Exemple: <code>font-size: 30px;</code>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-danger bg-danger-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-danger mb-4">
+              Variables en CSS
+            </h2>
+
+            <p class="mb-3">
+              Amb CSS es poden fer variables per guardar colors, tamanys... Les
+              variables es fan servir posant dos guions i un nom.
+            </p>
+
+            <p class="mb-3">
+              Primer es declaren dins de <code>:root</code> i despres es fan
+              servir amb <code>var()</code>.
+            </p>
+
+            <p class="mb-3">
+              Exemple:
+              <br />
+              <code>:root { --color-principal: red; }</code><br />
+              <code>h1 { color: var(--color-principal); }</code>
+            </p>
+
+            <p class="mb-3">
+              Aixo serveix per canviar un color en molts llocs sense escriure'l
+              cada vegada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-info bg-info-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-info mb-4">
+              Selectors CSS bàsics
+            </h2>
+
+            <p class="mb-3">
+              Els selectors serveixen per dir a quins elements vols aplicar els
+              estils. Hi ha tres maneres basics: etiqueta, classe i id.
+            </p>
+
+            <ul>
+              <li>
+                <b>Etiqueta</b> – s’aplica directament al nom de l’etiqueta.
+                Exemple: <code>p { color: red; }</code>
+              </li>
+              <li>
+                <b>Classe</b> – es fa servir amb un punt i pots repetir-la.
+                Exemple: <code>.image { width: 300px }</code>
+              </li>
+              <li>
+                <b>Identificador</b> – es posa amb hastag <code>#</code> i nomes
+                es fa servir un cop.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-warning bg-warning-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-warning mb-4">
+              Selectors CSS avançats
+            </h2>
+
+            <p class="mb-3">
+              Hi ha selectors mes avançats que deixen fer estils mes detallats o
+              que nomes passen en situacions concretes.
+            </p>
+
+            <ul>
+              <li>
+                <b>:hover</b> – fa l'estil nomes quan passes el ratoli per
+                sobre. Exemple:
+                <code>button:hover { background-color: red; }</code>
+              </li>
+
+              <li>
+                <b>::first-letter</b> – dona estil a la primera lletra. Exemple:
+                <code>p::first-letter { font-size: 30px; }</code>
+              </li>
+
+              <li>
+                <b>::before</b> i <b>::after</b> – posen contingut abans o
+                despres d’un element. Exemple:
+                <code>*:after, *:before { box-sizing: border-box; }</code>
+              </li>
+
+              <li>
+                <b>div &gt; p</b> – selecciona un parraf que esta directament
+                dins del div. Exemple:
+                <code>div &gt; p { font-style: italic; }</code>
+              </li>
+
+              <li>
+                <b>div + p</b> – agafa el primer p que ve just despres del div.
+                Exemple: <code>div + p { color: green; }</code>
+              </li>
+
+              <li>
+                <b>div p</b> – agafa TOTS els p que hi ha dintre div. Exemple:
+                <code>div p { font-size: 30px; }</code>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-secondary bg-secondary-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-secondary mb-4">
+              Selectors d’atribut
+            </h2>
+
+            <p class="mb-3">
+              A CSS es poden fer estils nomes a elements que tenen un atribut
+              concret, com per exemple <code>type</code>, <code>href</code> o
+              <code>alt</code>.
+            </p>
+
+            <p class="mb-3">
+              Es fa posant el nom de l’etiqueta i entre claudators l’atribut.
+              Exemple:
+              <code>input[type="text"]</code>
+            </p>
+
+            <ul>
+              <li>
+                <code>input[type="text"]</code> – agafa els inputs de text
+              </li>
+              <li>
+                <code>a[target="_blank"]</code> – agafa els links que obren en
+                pestanya nova
+              </li>
+              <li>
+                <code>img[alt]</code> – agafa imatges que tenen atribut alt
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-dark bg-dark-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-dark mb-4">
+              Selector universal i contextual
+            </h2>
+
+            <p class="mb-3">
+              El selector <b>universal</b> es fa amb un asterisc
+              <code>*</code> i serveix per agafar tots els elements de la
+              pagina. Es pot fer servir sol o combinat amb altres.
+            </p>
+
+            <p class="mb-3">
+              Exemple bàsic:
+              <code>* { margin: 0; padding: 0; }</code>
+            </p>
+
+            <p class="mb-3">
+              Tambe es pot fer servir <b>com a contextual</b>, combinat amb un
+              altre selector per agafar tots els fills. Exemple:
+            </p>
+
+            <p class="mb-3">
+              <code
+                >.container-col-3 &gt; * { width: 200px; float: left; border:
+                thin solid black; }</code
+              ><br />
+              En aquest cas, agafa tot el que esta directament dins de
+              <code>.container-col-3</code>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-success bg-success-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-success mb-4">
+              Pseudoclasses per posició
+            </h2>
+
+            <p class="mb-3">
+              Aquestes pseudoclasses serveixen per aplicar estils segons la
+              posicio d’un element dins del pare.
+            </p>
+
+            <ul>
+              <li>
+                <b>:first-child</b> – agafa el primer fill d’un element.
+                Exemple: <code>div:first-child { color: red; }</code>
+              </li>
+              <li>
+                <b>:last-child</b> – agafa l’ultim fill. Exemple:
+                <code>div:last-child { font-weight: bold; }</code>
+              </li>
+              <li>
+                <b>:nth-child(n)</b> – agafa el fill en la posicio que li
+                diguis. Exemple:
+                <code>ul:nth-child(2) { font-size: 30px; }</code>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-primary bg-primary-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-primary mb-4">
+              Pseudoelements
+            </h2>
+
+            <p class="mb-3">
+              Els pseudoelements serveixen per donar estil a parts concretes
+              d’un element.
+            </p>
+
+            <ul>
+              <li>
+                <b>::first-letter</b> – dona estil a la primera lletra. Exemple:
+                <code>p::first-letter { font-size: 30px; }</code>
+              </li>
+              <li>
+                <b>::first-line</b> – dona estil a la primera linia del text.
+                Exemple: <code>p::first-line { font-weight: bold; }</code>
+              </li>
+              <li>
+                <b>::before</b> – dona estil abans de l’element. Exemple:
+                <code
+                  >h1::before { display: block; background-color: lightgray;
+                  }</code
+                >
+              </li>
+              <li>
+                <b>::after</b> – dona estil despres de l’element. Exemple:
+                <code>h1::after { display: block; margin-top: 10px; }</code>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-secondary bg-secondary-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-secondary mb-4">
+              Com agrupar selectors
+            </h2>
+
+            <p class="mb-3">
+              Es poden posar varis selectors junts si vols que tinguin el mateix
+              estil. Es separen amb comes.
+            </p>
+
+            <p class="mb-3">
+              Exemple:
+              <code>h1, h2, p { color: red; }</code>
+            </p>
+
+            <p class="mb-3">
+              Amb aixo no cal repetir el mateix estil a cada etiqueta.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-danger bg-danger-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-danger mb-4">
+              L’algorisme de CSS
+            </h2>
+
+            <p class="mb-3">
+              Quan hi ha mes d’un estil que afecta al mateix element, el
+              navegador ha de triar quin aplicar. Aixo es diu la «cascada».
+            </p>
+
+            <p class="mb-3">
+              <b>1. Cascada</b> – si dos estils afecten el mateix, el navegador
+              escull el que esta mes abaix (l’ultim).
+            </p>
+
+            <p class="mb-3">
+              <b>2. Especificitat</b> – depen del tipus de selector:
+            </p>
+            <ul>
+              <li>Etiqueta <code>p</code> nivell 1</li>
+              <li>Classe <code>.text</code> nivell 2</li>
+              <li>ID <code>#titol</code> nivell 3</li>
+            </ul>
+
+            <p class="mb-3">
+              Si hi ha conflicte, guanya el que te mes especificitat.
+            </p>
+
+            <p class="mb-3">
+              <b>3. Herència</b> – alguns estils es passen dels pares als fills.
+              Per exemple, el color del text del <code>body</code> afecta als
+              <code>p</code> si no tenen color propi.
+            </p>
+
+            <p id="id" class="classe mb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non
+              mi sed velit dapibus sollicitudin.
+            </p>
+
+            <div class="container d-flex flex-row justify-content-center">
+              <img
+                src="assets/imatges/Captura1.png"
+                alt=""
+                class="mb-2 img mx-2"
+                width="30%"
+              />
+              <img
+                src="assets/imatges/Captura2.png"
+                alt=""
+                class="mb-2 img mx-2"
+                width="30%"
+              />
+              <img
+                src="assets/imatges/Captura3.png"
+                alt=""
+                class="mb-2 img mx-2"
+                width="30%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-info bg-info-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-info mb-4">
+              El model de caixa
+            </h2>
+
+            <p class="mb-3">
+              El model de caixa es com el navegador dibuixa els elements HTML.
+              Cada element te un espai interior i exterior.
+            </p>
+
+            <ul>
+              <li><b>Content</b> – el contingut com text o imatges</li>
+              <li><b>Padding</b> – espai entre el contingut i el border</li>
+              <li><b>Border</b> – el contorn de l’element</li>
+              <li><b>Margin</b> – espai de fora que separa de la resta</li>
+            </ul>
+
+            <p class="mb-3">
+              Aixo es pot controlar amb la propietat <code>box-sizing</code>. Hi
+              ha dos valors:
+            </p>
+
+            <ul>
+              <li>
+                <b>content-box</b> – es el valor per defecte. El
+                <code>width</code> nomes aplica al contingut, el padding, el
+                border i el margin es sumen a fora.
+              </li>
+              <li>
+                <b>border-box</b> – el <code>width</code> inclou el padding i el
+                border. Tot queda dins del tamany fixat. Menys el margin que
+                segueix a fora
+              </li>
+            </ul>
+
+            <p class="mb-3">
+              Exemple:
+              <br />
+              <code> *, *:after, *:before { box-sizing: border-box; } </code>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-warning bg-warning-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-warning mb-4">
+              Caixa de linia i de bloc
+            </h2>
+
+            <p class="mb-3">
+              Hi ha elements que son de bloc i altres que son de linia.
+            </p>
+
+            <ul>
+              <li>
+                <b>Bloc</b> – ocupa tota la linia i baixa avall. Exemple:
+                <code>div</code>, <code>p</code>, <code>h1</code>
+              </li>
+              <li>
+                <b>Línia</b> – es posa al costat d’altres i no fa salt. Exemple:
+                <code>span</code>, <code>a</code>, <code>img</code>
+              </li>
+            </ul>
+
+            <p class="mb-3">
+              Es pot canviar amb <code>display</code>. Exemple:
+              <code>span { display: block; }</code> o
+              <code>div { display: inline; }</code>
+            </p>
+
+            <p class="mb-3">
+              Aixo serveix per canviar com es veu l’element a la pagina.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-danger bg-danger-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-danger mb-4">
+              El col·lapse dels marges
+            </h2>
+
+            <p class="mb-3">
+              Quan poses dos marges seguits a vegades es solapen i nomes conta
+              el mes gran. Aixo es diu col·lapse.
+            </p>
+
+            <p class="mb-3"><b>Col·lapse vertical</b>:</p>
+            <p class="mb-3">
+              Passa quan dos elements estan un sota l’altre, com
+              <code>div</code> seguits. Si un te
+              <code>margin-bottom: 30px</code> i l’altre
+              <code>margin-top: 20px</code>, nomes s’aplica el de 30px.
+            </p>
+
+            <p class="mb-3"><b>Col·lapse horitzontal</b>:</p>
+            <p class="mb-3">
+              Aixo no passa igual. Quan els marges estan al costat (per exemple,
+              elements en linia), els marges si que se sumen.
+            </p>
+
+            <p class="mb-3">Es pot evitar el col·lapse amb padding o border.</p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <section class="container my-5">
+        <div class="card border-success bg-success-subtle">
+          <div class="card-body">
+            <h2 class="card-title text-center text-success mb-4">
+              El posicionament
+            </h2>
+
+            <p class="mb-3">
+              El <code>position</code> serveix per moure elements a la pagina.
+              Pero segons el valor que poses, es comporta diferent.
+            </p>
+
+            <ul>
+              <li>
+                <b>static</b> – es el valor que tenen tots per defecte. No es
+                pot moure amb <code>top</code>, <code>left</code>, etc.<br />
+                Exemple: <code>div { position: static; }</code>
+              </li>
+
+              <li>
+                <b>relative</b> – es mou des d’on estava. Es com si estigués en
+                el mateix lloc, pero pots moure’l una mica.<br />
+                Exemple: <code>div { position: relative; top: 20px; }</code> →
+                baixa 20px
+              </li>
+
+              <li>
+                <b>absolute</b> – es mou respecte al seu pare si el pare te
+                position. Si no, es mou respecte al body.<br />
+                Exemple:
+                <code>div { position: absolute; top: 50px; left: 100px; }</code>
+              </li>
+
+              <li>
+                <b>fixed</b> – queda enganxat a la pantalla, encara que facis
+                scroll. Serveix per fer menús que no es mouen.<br />
+                Exemple:
+                <code>div { position: fixed; bottom: 0; right: 0; }</code>
+              </li>
+
+              <li>
+                <b>sticky</b> – es mou amb el scroll, pero quan arriba a un punt
+                es queda clavat allà. Es mig fixe mig normal.<br />
+                Exemple: <code>div { position: sticky; top: 0; }</code>
+              </li>
+            </ul>
+
+            <p class="mb-3">
+              La diferència entre <b>relative</b> i <b>absolute</b> es aquesta:
+              amb <b>relative</b> l’element es manté al seu lloc, ocupa el seu
+              espai normal, pero el pots moure una mica amb <code>top</code>,
+              <code>left</code>, etc. Com si l’estiguessis desplaçant una mica.
+              En canvi, amb <b>absolute</b>, l’element surt del lloc on estava i
+              ja no ocupa espai allà. Va flotant i es col·loca on tu li diguis.
+              Si no li dius res, se’n va cap a l’esquerra a dalt de tot. Si li
+              poses <code>absolute</code>, es posiciona respecte al primer
+              element pare que tingui <code>position</code>. Si cap pare te
+              position, llavors es mou respecte al body.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!---->
+
+      <a href="index.html" class="btn btn-success">Documentacio HTML</a>
 
       <!---->
     </main>
